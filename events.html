@@ -1,0 +1,239 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events - VisitMK</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="images/logo.png" />
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="VisitMK Logo" class="logo" />
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="mybookings.html">My Bookings</a>
+      <a href="plan.html">Plan My Tour</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html" class="signin-btn">Sign In</a>
+    </nav>
+    <div class="theme-toggle-section">
+      <button id="themeToggle" aria-label="Toggle dark mode">
+        🌙 <span class="toggle-label">Dark Mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="events-container">
+    <h2>Upcoming Events in Milton Keynes</h2>
+    <div class="event-list">
+
+      <div class="event-wrapper">
+        <div class="event-card">
+          <img src="images/event1.jpg" alt="MK Food Festival" />
+          <h3>MK Food Festival</h3>
+          <p>Enjoy local flavours and live music at Campbell Park. <strong>Free Entry</strong>.</p>
+          <button onclick="openBooking('MK Food Festival', false)">Book</button>
+          <div class="event-details-hover left">
+            <p><strong>Event:</strong> MK Food Festival</p>
+            <p><strong>Location:</strong> Campbell Park</p>
+            <p><strong>Time:</strong> 12 PM – 8 PM</p>
+            <p>This event offers a variety of local food stalls, cooking demos, and live music from MK’s best community artists.</p>
+
+            <div class="event-rating">
+              <p><strong>Rating:</strong> 
+                <span>⭐⭐⭐☆☆</span> (3 / 5)
+              </p>
+            </div>
+
+            <div class="event-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d157074.18393392809!2d-0.757644!3d52.038138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48764cf882238685%3A0x161a9df74cb97e14!2sMilton%20Keynes!5e0!3m2!1sen!2suk!4v1747042546412!5m2!1sen!2suk" 
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-wrapper">
+        <div class="event-card">
+          <img src="images/event2.jpg" alt="Family Fun Fair" />
+          <h3>Family Fun Fair</h3>
+          <p>Rides, games and more for families. <strong>£5 per ticket</strong>.</p>
+          <button onclick="openBooking('Family Fun Fair', true)">Book</button>
+          <div class="event-details-hover right">
+            <p><strong>Event:</strong> Family Fun Fair</p>
+            <p><strong>Location:</strong> Willen Lake</p>
+            <p><strong>Time:</strong> 10 AM – 6 PM</p>
+            <p>A fun-packed day for the whole family. Unlimited rides with a wristband and snack stalls available.</p>
+
+            <div class="event-rating">
+              <p><strong>Rating:</strong> 
+                <span>⭐⭐⭐⭐☆</span> (4 / 5)
+              </p>
+            </div>
+
+            <div class="event-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d157074.18393392809!2d-0.757644!3d52.038138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48764cf882238685%3A0x161a9df74cb97e14!2sMilton%20Keynes!5e0!3m2!1sen!2suk!4v1747042546412!5m2!1sen!2suk" 
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-wrapper">
+        <div class="event-card">
+          <img src="images/event3.jpg" alt="Music in the Park" />
+          <h3>Music in the Park</h3>
+          <p>Live jazz and performances at sunset. <strong>Free Entry</strong>.</p>
+          <button onclick="openBooking('Music in the Park', false)">Book</button>
+          <div class="event-details-hover left">
+            <p><strong>Event:</strong> Music in the Park</p>
+            <p><strong>Location:</strong> Campbell Park Amphitheatre</p>
+            <p><strong>Time:</strong> 4 PM – 10 PM</p>
+            <p>Relax under the stars with jazz and acoustic sets. Bring blankets, snacks and your friends. This is a free community celebration of local talent.</p>
+
+            <div class="event-rating">
+              <p><strong>Rating:</strong> 
+                <span>⭐⭐⭐⭐☆</span> (4 / 5)
+              </p>
+            </div>
+
+            <div class="event-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d157074.18393392809!2d-0.757644!3d52.038138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48764cf882238685%3A0x161a9df74cb97e14!2sMilton%20Keynes!5e0!3m2!1sen!2suk!4v1747042546412!5m2!1sen!2suk" 
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-wrapper">
+        <div class="event-card">
+          <img src="images/event5.jpg" alt="Heritage Open Day" />
+          <h3>Heritage Open Day</h3>
+          <p>Guided tours of historic MK buildings. <strong>Free Entry</strong>.</p>
+          <button onclick="openBooking('Heritage Open Day', false)">Book</button>
+          <div class="event-details-hover right">
+            <p><strong>Event:</strong> Heritage Open Day</p>
+            <p><strong>Location:</strong> Bletchley Park</p>
+            <p><strong>Time:</strong> 9 AM – 5 PM</p>
+            <p>Step into history with expert-led tours around MK's iconic heritage buildings. A great event for architecture and history lovers.</p>
+
+            <div class="event-rating">
+              <p><strong>Rating:</strong> 
+                <span>⭐⭐⭐⭐⭐</span> (5 / 5)
+              </p>
+            </div>
+
+            <div class="event-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d157074.18393392809!2d-0.757644!3d52.038138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48764cf882238685%3A0x161a9df74cb97e14!2sMilton%20Keynes!5e0!3m2!1sen!2suk!4v1747042546412!5m2!1sen!2suk" 
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="event-wrapper">
+        <div class="event-card">
+          <img src="images/event6.jpg" alt="MK Comic Expo" />
+          <h3>MK Comic Expo</h3>
+          <p>Comics, cosplay & guest panels. <strong>£8 per ticket</strong>.</p>
+          <button onclick="openBooking('MK Comic Expo', true)">Book</button>
+          <div class="event-details-hover left">
+            <p><strong>Event:</strong> MK Comic Expo</p>
+            <p><strong>Location:</strong> Arena MK</p>
+            <p><strong>Time:</strong> 10 AM – 6 PM</p>
+            <p>Join fellow fans for a full day of panels, signings, cosplay contests and rare comic vendors. Tickets include lanyard access pass.</p>
+
+            <div class="event-rating">
+              <p><strong>Rating:</strong> 
+                <span>⭐⭐☆☆☆</span> (2 / 5)
+              </p>
+            </div>
+
+            <div class="event-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d157074.18393392809!2d-0.757644!3d52.038138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48764cf882238685%3A0x161a9df74cb97e14!2sMilton%20Keynes!5e0!3m2!1sen!2suk!4v1747042546412!5m2!1sen!2suk" 
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="event-wrapper">
+        <div class="event-card">
+          <img src="images/event4.jpg" alt="MK Glow Night" />
+          <h3>MK Glow Night</h3>
+          <p>LED light walk, glow merch & entertainment. <strong>£10 per person</strong>.</p>
+          <button onclick="openBooking('MK Glow Night', true)">Book</button>
+          <div class="event-details-hover right">
+            <p><strong>Event:</strong> MK Glow Night</p>
+            <p><strong>Location:</strong> MK Stadium</p>
+            <p><strong>Time:</strong> 7 PM – 11 PM</p>
+            <p>Experience a glowing adventure with LED paths, music, stalls and fun for all ages. Includes free glow bands with your entry ticket.</p>
+            
+            <div class="event-rating">
+              <p><strong>Rating:</strong> 
+                <span>⭐⭐⭐⭐☆</span> (4 / 5)
+              </p>
+            </div>
+
+            <div class="event-map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d157074.18393392809!2d-0.757644!3d52.038138!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48764cf882238685%3A0x161a9df74cb97e14!2sMilton%20Keynes!5e0!3m2!1sen!2suk!4v1747042546412!5m2!1sen!2suk" 
+              width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+
+      
+
+    </div>
+  </main>
+
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeBooking()">&times;</span>
+      <h3 id="eventTitle">Event Booking</h3>
+      <form id="bookingForm">
+        <label>Date of Visit:</label>
+        <input type="date" id="visitDate" required />
+        <p class="error" id="dateError"></p>
+
+        <label>Total Tickets (Including You):</label>
+        <input type="number" id="totalTickets" min="1" />
+        <p class="error" id="ticketError"></p>
+
+        <label>Kids (3-15):</label>
+        <input type="number" id="kidsMid" min="0" />
+
+        <label>Kids (0-3):</label>
+        <input type="number" id="kidsSmall" min="0" />
+
+        <div id="paymentFields" style="display:none;">
+          <label>Card Number:</label>
+          <input type="text" id="cardNumber" maxlength="16" />
+          <label>Expiry Date (MM/YY):</label>
+          <input type="text" id="expiryDate" placeholder="MM/YY" />
+          <label>CVV:</label>
+          <input type="text" id="cvv" maxlength="3" />
+          <p class="error" id="cardError"></p>
+        </div>
+
+        <button type="submit">Confirm Booking</button>
+        <p class="success" id="bookingSuccess"></p>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 VisitMK. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

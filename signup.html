@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - VisitMK</title>
+  <link rel="icon" type="image/png" href="images/logo.png"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="VisitMK Logo" class="logo"/>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="mybookings.html">My Bookings</a>
+          <a href="plan.html">Plan My Tour</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="login.html" class="signin-btn">Sign In</a>
+        </nav>
+        <div class="theme-toggle-section">
+          <button id="themeToggle" aria-label="Toggle dark mode">🌙 <span class="toggle-label">Dark Mode</span></button>
+        </div>
+      </header>
+      
+
+  <main class="form-container">
+    <h2>Create Account</h2>
+    <form id="signupForm">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" required>
+      <p class="error" id="fnameError"></p>
+
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" required>
+      <p class="error" id="lnameError"></p>
+
+      <label for="signupEmail">Email:</label>
+      <input type="email" id="signupEmail" required>
+      <p class="error" id="signupEmailError"></p>
+
+      <label for="signupPassword">Password:</label>
+      <input type="password" id="signupPassword" required>
+      <p class="error" id="signupPasswordError"></p>
+
+      <label for="confirmPassword">Confirm Password:</label>
+      <input type="password" id="confirmPassword" required>
+      <p class="error" id="confirmPasswordError"></p>
+
+      <button type="submit">Sign Up</button>
+      <p class="success" id="signupSuccess"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 VisitMK. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

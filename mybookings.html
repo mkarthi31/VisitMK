@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Bookings - VisitMK</title>
+  <link rel="icon" type="image/png" href="images/logo.png"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="VisitMK Logo" class="logo"/>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="mybookings.html">My Bookings</a>
+      <a href="plan.html">Plan My Tour</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html" class="signin-btn">Sign In</a>
+    </nav>
+    <div class="theme-toggle-section">
+      <button id="themeToggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+        🌙 <span class="toggle-label">Dark Mode</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="events-container">
+    <h2>My Bookings</h2>
+    <div class="booking-list">
+      <div class="booking-card" id="booking1">
+        <img src="images/event1.jpg" alt="MK Food Festival" />
+        <h3>MK Food Festival</h3>
+        <p><strong>Date:</strong> 12/05/2025</p>
+        <p><strong>Tickets:</strong> 3 (1 adult, 2 kids)</p>
+        <button onclick="editBooking('booking1')">Edit</button>
+        <button onclick="cancelBooking('booking1')">Cancel</button>
+      </div>
+
+      <div class="booking-card" id="booking2">
+        <img src="images/event2.jpg" alt="Family Fun Fair" />
+        <h3>Family Fun Fair</h3>
+        <p><strong>Date:</strong> 14/05/2025</p>
+        <p><strong>Tickets:</strong> 4 (2 adults, 2 kids)</p>
+        <button onclick="editBooking('booking2')">Edit</button>
+        <button onclick="cancelBooking('booking2')">Cancel</button>
+      </div>
+    </div>
+
+    <div id="editModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeEdit()">&times;</span>
+        <h3>Edit Booking</h3>
+        <form id="editForm">
+          <label>New Date:</label>
+          <input type="date" id="editDate" required />
+          <label>New Ticket Count:</label>
+          <input type="number" id="editTickets" min="1" required />
+          <button type="submit">Confirm Changes</button>
+          <p class="success" id="editSuccess"></p>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 VisitMK. All rights reserved.</p>
+  </footer>
+
+  <script>
+    if (localStorage.getItem("loggedIn") !== "true") {
+      window.location.href = "login.html";
+    }
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>

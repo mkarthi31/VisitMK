@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - VisitMK</title>
+  <link rel="icon" type="image/png" href="images/logo.png"/>  
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="VisitMK Logo" class="logo"/>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="events.html">Events</a>
+          <a href="mybookings.html">My Bookings</a>
+          <a href="plan.html">Plan My Tour</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="login.html" class="signin-btn">Sign In</a>
+        </nav>
+        <div class="theme-toggle-section">
+          <button id="themeToggle" aria-label="Toggle dark mode">🌙 <span class="toggle-label">Dark Mode</span></button>
+        </div>
+      </header>
+      
+
+  <main class="form-container">
+    <h2>Sign In</h2>
+    <form id="loginForm">
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <p class="error" id="emailError"></p>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <p class="error" id="passwordError"></p>
+
+      <button type="submit">Login</button>
+      <p class="success" id="loginSuccess"></p>
+      <p>Forgot your password? <a href="forgot.html">Click here</a></p>
+      <p>Don’t have an account? <a href="signup.html">Register here</a></p>
+
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 VisitMK. All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

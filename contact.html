@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - VisitMK</title>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="icon" type="image/png" href="images/logo.png"/>
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="VisitMK Logo" class="logo"/>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="mybookings.html">My Bookings</a>
+      <a href="plan.html">Plan My Tour</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="login.html" class="signin-btn">Sign In</a>
+    </nav>
+    <div class="theme-toggle-section">
+      <button id="themeToggle" aria-label="Toggle dark mode">🌙 <span class="toggle-label">Dark Mode</span></button>
+    </div>
+  </header>
+
+  <main class="form-container">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feedback or need help, reach out to us below.</p>
+    <form id="contactForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+
+      <label for="message">Message:</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Send Message</button>
+      <p class="success" id="contactSuccess"></p>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 VisitMK. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      document.getElementById("contactSuccess").textContent = "Message sent successfully! (Simulated)";
+      this.reset();
+    });
+  </script>
+  <script src="js/main.js"></script>
+</body>
+</html>
